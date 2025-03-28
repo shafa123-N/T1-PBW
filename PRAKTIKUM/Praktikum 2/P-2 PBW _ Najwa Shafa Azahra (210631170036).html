@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir HTML</title>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <!-- Input Username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="20">
+        <br><br>
+
+        <!-- Textarea Komentar -->
+        <label for="komentar">Komentar:</label>
+        <textarea id="komentar" name="komentar" rows="4" cols="50" placeholder="Masukkan komentar Anda"></textarea>
+        <br><br>
+
+        <!-- Dropdown Pilihan -->
+        <label for="pilihan">Pilih Opsi:</label>
+        <select id="pilihan" name="pilihan">
+            <option value="1">Pilihan 1</option>
+            <option value="2">Pilihan 2</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Button Gender -->
+        <label>Jenis Kelamin:</label>
+        <label><input type="radio" name="gender" value="male"> Laki-laki</label>
+        <label><input type="radio" name="gender" value="female"> Perempuan</label>
+        <br><br>
+
+        <!-- Checkbox Hobi -->
+        <label>Hobi:</label>
+        <label><input type="checkbox" name="hobi" value="musik"> Musik</label>
+        <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+        <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
+        <br><br>
+
+        <!-- Tombol Submit -->
+        <button type="submit">Kirim</button>
+    </form>
+
+    <br>
+
+    <!-- Tombol dengan JavaScript -->
+    <button type="button" onclick="alert('Halo!')">Klik Saya</button>
+
+    <br><br>
+
+    <!-- Form Upload File -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Pilih File:</label>
+        <input type="file" id="file" name="file">
+        <button type="submit">Unggah</button>
+    </form>
+
+    <br>
+
+    <!-- Input Tambahan -->
+    <form action="process.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="age">Usia:</label>
+        <input type="number" id="age" name="age" min="18" max="60">
+        <br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+</body>
+</html>
