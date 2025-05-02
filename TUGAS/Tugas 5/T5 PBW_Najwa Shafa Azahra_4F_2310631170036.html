@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Harga Barang</title>
+    <link rel="stylesheet" href="T5 PBW_Najwa Shafa Azahra_4F_2310631170036.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Harga Barang</h1>
+        <form action="T5 PBW_Najwa Shafa Azahra_4F_2310631170036.php" method="post">
+            <label for="barang">Pilih Barang:</label>
+            <select name="barang" id="barang">
+                <option value="0">Buku - Rp10.000</option>
+                <option value="1">Pensil - Rp5.000</option>
+                <option value="2">Penghapus - Rp3.000</option>
+                <option value="3">Pulpen - Rp7.000</option>
+                <option value="4">Penggaris - Rp4.000</option>
+                <option value="5">Spidol - Rp8.000</option>
+                <option value="6">Tip-Ex - Rp6.000</option>
+                <option value="7">Keyboard - Rp150.000</option>
+            </select>
+
+            <label for="jumlah">Jumlah Beli:</label>
+            <input type="number" name="jumlah" id="jumlah" min="1" required>
+
+            <button type="submit">Hitung Total</button>
+        </form>
+    </div>
+</body>
+</html>
